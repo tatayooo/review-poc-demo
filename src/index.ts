@@ -5,3 +5,4 @@ export function greet(name: string): string {
 
 console.log(greet('world'));
 // trailing commit for S-3 test
+// phase-2 marker: cloud run path 2120
