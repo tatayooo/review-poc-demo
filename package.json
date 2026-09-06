@@ -1,0 +1,13 @@
+{
+  "name": "review-poc-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dummy consumer repo for the astro-review-poc GitHub App live test. Intentionally contains code smells for the reviewer to find.",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
