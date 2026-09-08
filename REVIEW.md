@@ -26,6 +26,29 @@ workflow to update.
       "role": "instructions"
     }
   ],
+  "optional_context": [],
+  "conditional_context": [],
+  "required_checks": [
+    {
+      "name": "build",
+      "category": "test"
+    }
+  ],
+  "diff_limits": {
+    "changed_files": 100,
+    "changed_lines": 5000
+  },
+  "diff_override": {
+    "label": "ai-review-size-approved",
+    "authorized_associations": [
+      "OWNER",
+      "MEMBER"
+    ]
+  },
+  "docs_only_paths": [
+    "**/*.md",
+    "docs/**"
+  ],
   "excluded_paths": [
     "**/*_test.go",
     "**/*.test.ts",
