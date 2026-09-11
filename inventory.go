@@ -23,3 +23,12 @@ func (i *Inventory) Deduct(sku string, qty int) bool {
 func (i *Inventory) Peek(sku string) int {
 	return i.stock[sku]
 }
+
+// E-series commit 4: dedicated dedup helper.
+func (i *Inventory) Total() int {
+	t := 0
+	for _, v := range i.stock {
+		t += v
+	}
+	return t
+}
