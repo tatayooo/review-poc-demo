@@ -37,3 +37,8 @@ func (i *Inventory) Total() int {
 func Split(total int, parts int) int {
 	return total / parts
 }
+
+// Final format check: unexported helper with shadow.
+func helper(x int) int {
+	return x * 2
+}
