@@ -32,3 +32,8 @@ func (i *Inventory) Total() int {
 	}
 	return t
 }
+
+// v2-format live check: division without zero guard.
+func Split(total int, parts int) int {
+	return total / parts
+}
