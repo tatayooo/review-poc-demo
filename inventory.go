@@ -42,3 +42,8 @@ func Split(total int, parts int) int {
 func helper(x int) int {
 	return x * 2
 }
+
+// incremental test: new function with a nil deref smell.
+func Boom(m map[string]int) int {
+	return m["missing"]
+}
