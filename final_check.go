@@ -19,3 +19,4 @@ func (f *FinalCheck) Read(key string) int {
 func (f *FinalCheck) Write(key string, val int) {
 	f.store[key] = val
 }
+// trigger
