@@ -20,3 +20,4 @@ func (f *FinalCheck) Write(key string, val int) {
 	f.store[key] = val
 }
 // trigger
+// emoji-only check
